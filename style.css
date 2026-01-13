@@ -140,16 +140,7 @@ footer {
   border-left: 3px solid #1fa2a6;
   padding-left: 15px;
 }
-.profile-img {
-  width: 180px;           /* Image size */
-  height: 180px;
-  border-radius: 50%;     /* Makes the image round */
-  object-fit: cover;      /* Ensures it fully fills the circle */
-  display: block;         /* Puts the image on a new line */
-  margin: 0 auto 20px;    /* Center it and add bottom space */
-  border: 3px solid #fff; /* Nice white border */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Soft shadow */
-}
+
 /* Hero Section */
 .hero {
   text-align: center;       /* center the text */
@@ -157,17 +148,7 @@ footer {
   background-color: #f5f5f5; /* background color */
 }
 
-/* Profile Image */
-.profile-img {
-  width: 150px;             /* image width */
-  height: 150px;            /* image height */
-  border-radius: 50%;       /* make the image round */
-  object-fit: cover;        /* cover the circle without distortion */
-  display: block;           /* place image on a new line */
-  margin: 0 auto 20px;      /* center image and add bottom margin */
-  border: 3px solid #fff;   /* white border */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* soft shadow */
-}
+
 /* Hero Section */
 .hero {
   background-color: #f5f5f5; /* background color */
@@ -182,16 +163,7 @@ footer {
   align-items: center;
 }
 
-/* Profile Image */
-.profile-img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #fff;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  margin-bottom: 30px;
-}
+
 
 /* Hero Text */
 .hero-text h2 {
@@ -203,4 +175,14 @@ footer {
   margin: 0;
   font-size: 16px;
   color: #333;
+}
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 30px;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }

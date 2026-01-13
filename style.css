@@ -150,3 +150,21 @@ footer {
   border: 3px solid #fff; /* Nice white border */
   box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Soft shadow */
 }
+/* Hero Section */
+.hero {
+  text-align: center;       /* center the text */
+  padding: 60px 20px;       /* top and bottom spacing */
+  background-color: #f5f5f5; /* background color */
+}
+
+/* Profile Image */
+.profile-img {
+  width: 150px;             /* image width */
+  height: 150px;            /* image height */
+  border-radius: 50%;       /* make the image round */
+  object-fit: cover;        /* cover the circle without distortion */
+  display: block;           /* place image on a new line */
+  margin: 0 auto 20px;      /* center image and add bottom margin */
+  border: 3px solid #fff;   /* white border */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* soft shadow */
+}

@@ -104,3 +104,39 @@ footer {
   padding: 20px 0;
   font-size: 13px;
 }
+/* Buttons */
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  background: #0b1c2d;
+  color: #ffffff;
+  padding: 12px 22px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #163b5c;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: #0b1c2d;
+  border: 1px solid #0b1c2d;
+}
+
+.btn.secondary:hover {
+  background: #0b1c2d;
+  color: white;
+}
+#news .item {
+  border-left: 3px solid #1fa2a6;
+  padding-left: 15px;
+}

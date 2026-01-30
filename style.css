@@ -1,433 +1,145 @@
+/* ================= RESET ================= */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+/* ================= GLOBAL ================= */
 body {
-  margin: 0;
-  font-family: Roboto, sans-serif;
-  color: #2e2e2e;
-  background: #ffffff;
+  background: radial-gradient(circle at top, #141414 0%, #0b0b0b 60%);
+  color: #e6e6e6;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.7;
+  letter-spacing: 0.2px;
 }
 
-header {
-  background: #0b1c2d;
-  position: sticky;
-  top: 0;
-}
-
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-}
-
-.nav h1 {
-  color: #ffffff;
-  font-family: Inter, sans-serif;
-  font-size: 20px;
-}
-
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  margin-left: 20px;
-  font-size: 14px;
-}
-
-.hero {
-  background: #f4f6f8;
-  padding: 80px 0;
-  text-align: center;
-}
-
-.hero h2 {
-  font-family: Inter, sans-serif;
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.section {
-  padding: 70px 0;
-}
-
-.section.alt {
-  background: #f9fafb;
-}
-
-h3 {
-  font-family: Inter, sans-serif;
-  font-size: 26px;
-  margin-bottom: 20px;
-}
-
-.item {
-  margin-bottom: 30px;
-}
-
-.item h4 {
-  margin: 0;
-  font-size: 18px;
-}
-
-.item span {
-  font-size: 14px;
-  color: #1fa2a6;
-}
-
-.skills {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 10px;
-}
-
-.skills li {
-  background: #eef2f5;
-  padding: 10px 15px;
-  border-radius: 4px;
-  font-size: 14px;
-}
-
-footer {
-  background: #0b1c2d;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 13px;
-}
-/* Buttons */
-.buttons {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.btn {
-  background: #0b1c2d;
-  color: #ffffff;
-  padding: 12px 22px;
-  text-decoration: none;
-  font-size: 14px;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  background: #163b5c;
-}
-
-.btn.secondary {
-  background: transparent;
-  color: #0b1c2d;
-  border: 1px solid #0b1c2d;
-}
-
-.btn.secondary:hover {
-  background: #0b1c2d;
-  color: white;
-}
-#news .item {
-  border-left: 3px solid #1fa2a6;
-  padding-left: 15px;
-}
-
-/* Hero Section */
-.hero {
-  text-align: center;       /* center the text */
-  padding: 60px 20px;       /* top and bottom spacing */
-  background-color: #f5f5f5; /* background color */
-}
-
-
-/* Hero Section */
-.hero {
-  background-color: #f5f5f5; /* background color */
-  text-align: center;
-  padding: 80px 20px;        /* enough space for image */
-}
-
-/* Hero container */
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
-/* Hero Text */
-.hero-text h2 {
-  margin: 0 0 10px;
-  font-size: 28px;
-}
-
-.hero-text p {
-  margin: 0;
-  font-size: 16px;
-  color: #333;
-}
-.profile-img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 30px;
-  border: 3px solid #fff;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-.github-link {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 14px;
-  border-radius: 8px;
-  background: #111;
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
-}
-
-.github-link:hover {
-  background: #6e40ff;
-  transform: translateY(-2px);
-}
-.hero {
-  padding: 80px 0;
-  background: #f5f5f5;
-}
-
-.hero h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  color: #555;
-}
-/* ===== General ===== */
-body {
-  font-family: 'Inter', 'Roboto', sans-serif;
-  color: #1f2933;
-  background-color: #ffffff;
-  line-height: 1.7;
-}
-
-/* ===== Sections ===== */
-.section {
-  padding: 60px 0;
-}
-
-.section.alt {
-  background-color: #f8f9fb;
-}
-
-/* ===== Container ===== */
-.container {
-  max-width: 920px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* ===== Headings ===== */
-h3 {
-  font-size: 1.6rem;
-  margin-bottom: 8px;
-  letter-spacing: 0.5px;
-}
-
-h4 {
-  font-size: 1.15rem;
-  margin-bottom: 4px;
-  font-weight: 600;
-}
-
-/* ===== Item Blocks ===== */
-.item {
-  margin-bottom: 28px;
-}
-
-.item p {
-  margin: 6px 0;
-  color: #4b5563;
-}
-
-/* ===== Meta text (date/location) ===== */
-.meta {
-  font-size: 0.9rem;
-  color: #6b7280;
-  margin-bottom: 8px;
-}
-
-/* ===== Lists ===== */
-ul {
-  padding-left: 18px;
-  margin-top: 8px;
-}
-
-ul li {
-  margin-bottom: 6px;
-}
-
-/* ===== Projects ===== */
-.project {
-  border-left: 3px solid #e5e7eb;
-  padding-left: 16px;
-}
-
-.project:hover {
-  border-left-color: #111827;
-}
-
-/* ===== Tech Stack ===== */
-.tech {
-  font-size: 0.85rem;
-  color: #374151;
-  font-style: italic;
-}
-
-/* ===== GitHub Link ===== */
-.github-link {
-  display: inline-block;
-  margin-top: 10px;
+a {
+  color: #c8a951;
   text-decoration: none;
   font-weight: 500;
-  color: #111827;
-  border-bottom: 1px solid transparent;
 }
 
-.github-link:hover {
-  border-bottom: 1px solid #111827;
+a:hover {
+  color: #e6c46a;
 }
 
-/* ===== Footer ===== */
-footer {
-  padding: 30px 0;
-  text-align: center;
-  font-size: 0.85rem;
-  color: #6b7280;
-  border-top: 1px solid #e5e7eb;
-}
-/* ===== EXECUTIVE RESET ===== */
-body {
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #ffffff;
-  color: #111827;
-  line-height: 1.8;
+/* ================= LAYOUT ================= */
+.section {
+  padding: 90px 0;
 }
 
-/* ===== PAGE WIDTH (خیلی مهم) ===== */
 .container {
-  max-width: 860px;
+  width: 100%;
+  max-width: 980px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
-/* ===== SECTION RHYTHM ===== */
-.section {
-  padding: 80px 0;
-}
-
-.section.alt {
-  background: #fafafa;
-}
-
-/* ===== SECTION TITLES ===== */
+/* ================= HEADINGS ================= */
 h3 {
-  font-size: 1.9rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-  position: relative;
-}
-
-h3::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -14px;
-  width: 60px;
-  height: 3px;
-  background: #111827;
-}
-
-/* ===== ROLE / DEGREE TITLES ===== */
-h4 {
-  font-size: 1.15rem;
+  font-size: 26px;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 36px;
+  color: #f1f1f1;
+  border-left: 4px solid #c8a951;
+  padding-left: 14px;
 }
 
-/* ===== META LINE ===== */
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
 .meta {
-  font-size: 0.9rem;
-  color: #6b7280;
+  font-size: 14px;
+  color: #a0a0a0;
   margin-bottom: 14px;
 }
 
-/* ===== CONTENT BLOCK ===== */
+/* ================= CARDS ================= */
 .item {
-  margin-bottom: 48px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.015)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 26px 28px;
+  margin-bottom: 32px;
+  transition: all 0.35s ease;
 }
 
-/* ===== LISTS ===== */
+.item:hover {
+  transform: translateY(-6px);
+  border-color: rgba(200, 169, 81, 0.6);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* ================= LIST ================= */
 ul {
-  padding-left: 18px;
+  list-style: none;
+  margin-top: 10px;
 }
 
 ul li {
+  position: relative;
+  padding-left: 18px;
   margin-bottom: 10px;
-  color: #1f2937;
+  font-size: 15px;
+  color: #d8d8d8;
 }
 
-/* ===== PROJECTS – EXECUTIVE STYLE ===== */
-.project {
-  padding-left: 24px;
-  border-left: 4px solid #111827;
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #c8a951;
+  font-size: 18px;
+  line-height: 1;
 }
 
-/* ===== TECH STACK ===== */
+/* ================= PROJECTS ================= */
+.project h4 {
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 15px;
+  color: #d4d4d4;
+}
+
 .tech {
-  margin-top: 8px;
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #374151;
+  margin-top: 12px;
+  font-size: 13px;
+  color: #bfa85a;
+  letter-spacing: 0.5px;
 }
 
-/* ===== GITHUB LINK ===== */
+/* ================= GITHUB LINK ================= */
 .github-link {
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #111827;
-  border-bottom: 2px solid #111827;
-  padding-bottom: 4px;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  background: rgba(200, 169, 81, 0.12);
+  border: 1px solid rgba(200, 169, 81, 0.4);
+  transition: all 0.3s ease;
 }
 
 .github-link:hover {
-  opacity: 0.7;
+  background: rgba(200, 169, 81, 0.22);
+  box-shadow: 0 0 0 3px rgba(200, 169, 81, 0.15);
 }
 
-/* ===== FOOTER ===== */
+/* ================= FOOTER ================= */
 footer {
-  margin-top: 80px;
-  padding: 40px 0;
-  border-top: 1px solid #e5e7eb;
-  font-size: 0.85rem;
-  color: #6b7280;
+  padding: 50px 0;
   text-align: center;
+  font-size: 14px;
+  color: #888;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }

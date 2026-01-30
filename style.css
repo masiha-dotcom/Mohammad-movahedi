@@ -7,7 +7,7 @@
 
 /* ================= BODY ================= */
 body {
-  background-color: #f5f5f5; /* رسمی و روشن */
+  background: linear-gradient(to bottom, #f0f4f8, #dbe6f3); /* سفید آبی شیک */
   color: #1c1c1c;
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.7;
@@ -17,7 +17,7 @@ body {
 header {
   padding: 20px 0;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ccc;
 }
 
 header h1 {
@@ -98,8 +98,8 @@ h4 {
 
 /* ================= ITEM CARDS ================= */
 .item {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: #ffffff;
+  border: 1px solid #ccc;
   border-radius: 12px;
   padding: 24px;
   margin-bottom: 28px;
@@ -144,7 +144,7 @@ ul li {
 
 .tech {
   font-size: 13px;
-  color: #777;
+  color: #555;
   margin-top: 8px;
 }
 
@@ -155,14 +155,14 @@ ul li {
   padding: 10px 16px;
   border-radius: 8px;
   border: 1px solid #1c1c1c;
-  background: #f5f5f5;
+  background: #e8f0fc;
   color: #1c1c1c;
   text-decoration: none;
   font-weight: 500;
 }
 
 .github-link:hover {
-  background: #e0e0e0;
+  background: #d0e0f8;
 }
 
 /* ================= FOOTER ================= */
@@ -171,5 +171,5 @@ footer {
   text-align: center;
   font-size: 14px;
   color: #666;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #ccc;
 }

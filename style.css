@@ -7,11 +7,12 @@
 
 /* ================= GLOBAL ================= */
 body {
-  background: radial-gradient(circle at top, #141414 0%, #0b0b0b 60%);
-  color: #e6e6e6;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,0.92), rgba(0,0,0,0.85)),
+    radial-gradient(circle at top left, #1b1b1b, transparent 40%),
+    radial-gradient(circle at bottom right, #111111, transparent 45%);
+  color: #eaeaea;
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.7;
-  letter-spacing: 0.2px;
 }
 
 a {

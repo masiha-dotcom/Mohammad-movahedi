@@ -216,3 +216,106 @@ footer {
   font-size: 1.1rem;
   color: #555;
 }
+/* ===== General ===== */
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  color: #1f2933;
+  background-color: #ffffff;
+  line-height: 1.7;
+}
+
+/* ===== Sections ===== */
+.section {
+  padding: 60px 0;
+}
+
+.section.alt {
+  background-color: #f8f9fb;
+}
+
+/* ===== Container ===== */
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== Headings ===== */
+h3 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+h4 {
+  font-size: 1.15rem;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+/* ===== Item Blocks ===== */
+.item {
+  margin-bottom: 28px;
+}
+
+.item p {
+  margin: 6px 0;
+  color: #4b5563;
+}
+
+/* ===== Meta text (date/location) ===== */
+.meta {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+/* ===== Lists ===== */
+ul {
+  padding-left: 18px;
+  margin-top: 8px;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+/* ===== Projects ===== */
+.project {
+  border-left: 3px solid #e5e7eb;
+  padding-left: 16px;
+}
+
+.project:hover {
+  border-left-color: #111827;
+}
+
+/* ===== Tech Stack ===== */
+.tech {
+  font-size: 0.85rem;
+  color: #374151;
+  font-style: italic;
+}
+
+/* ===== GitHub Link ===== */
+.github-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #111827;
+  border-bottom: 1px solid transparent;
+}
+
+.github-link:hover {
+  border-bottom: 1px solid #111827;
+}
+
+/* ===== Footer ===== */
+footer {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+}

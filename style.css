@@ -1,175 +1,199 @@
-/* ================= RESET ================= */
+/* ================== RESET ================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-/* ================= BODY ================= */
+/* ================== BODY ================== */
 body {
-  background: linear-gradient(to bottom, #f0f4f8, #dbe6f3); /* white-blue gradient */
-  color: #1c1c1c;
-  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.7;
+  background: #ffffff; /* white background */
+  color: #1a1a1a;
+  line-height: 1.6;
 }
 
-/* ================= HEADER ================= */
-header {
+/* ================== CONTAINER ================== */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 20px 0;
-  text-align: center;
-  border-bottom: 1px solid #ccc;
+}
+
+/* ================== HEADER ================== */
+header {
+  background: #0a2540; /* dark blue, official and formal */
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 header h1 {
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 6px;
+  font-size: 2rem;
+  margin-left: 20px;
+}
+
+header nav {
+  float: right;
+  margin-right: 20px;
 }
 
 header nav a {
-  margin: 0 14px;
-  color: #1c1c1c;
+  color: #fff;
   text-decoration: none;
+  margin-left: 20px;
   font-weight: 500;
+  transition: 0.3s;
 }
 
 header nav a:hover {
-  text-decoration: underline;
+  color: #ffd166; /* golden accent on hover */
 }
 
-/* ================= HERO ================= */
+/* ================== HERO ================== */
 .hero {
+  background: #f5f7fa; /* very light formal background */
+  padding: 60px 0;
   text-align: center;
-  margin: 60px 0;
 }
 
-.profile-img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%; /* circular image */
+.hero .profile-img {
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  border: 3px solid #1c1c1c;
+  border-radius: 50%; /* circular image */
+  border: 5px solid #0a2540; /* dark blue border */
   margin-bottom: 20px;
 }
 
-.hero-text h2 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 8px;
+.hero h2 {
+  font-size: 2rem;
+  color: #0a2540;
+  margin-bottom: 10px;
 }
 
-.hero-text p {
-  font-size: 16px;
-  color: #555;
-}
-
-/* ================= CONTAINER ================= */
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 60px 20px;
-}
-
-/* ================= SECTIONS ================= */
-.section {
-  margin-bottom: 80px;
-}
-
-h3 {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 24px;
-  color: #111;
-  border-left: 4px solid #1c1c1c;
-  padding-left: 12px;
-}
-
-h4 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 6px;
-}
-
-.meta {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 12px;
-}
-
-/* ================= ITEM CARDS ================= */
-.item {
-  background: #ffffff;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  padding: 24px;
-  margin-bottom: 28px;
-  transition: all 0.3s ease;
-}
-
-.item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
-}
-
-/* ================= LISTS ================= */
-ul {
-  list-style: none;
-  padding-left: 18px;
-  margin-top: 8px;
-}
-
-ul li::before {
-  content: "•";
-  color: #1c1c1c;
-  display: inline-block;
-  width: 16px;
-  margin-left: -16px;
-}
-
-ul li {
-  margin-bottom: 8px;
+.hero p {
+  font-size: 1.2rem;
   color: #333;
-  font-size: 15px;
 }
 
-/* ================= PROJECTS ================= */
-.project h4 {
-  margin-bottom: 8px;
+/* ================== SECTIONS ================== */
+.section {
+  padding: 40px 0;
 }
 
-.project p {
-  font-size: 15px;
-  color: #444;
+.section.alt {
+  background: #0a2540; /* dark blue official */
+  color: #fff;
+  border-radius: 12px;
+  margin: 20px 0;
+  padding: 40px;
 }
 
-.tech {
-  font-size: 13px;
-  color: #555;
-  margin-top: 8px;
+.section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffd166; /* golden underline for luxury */
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
-/* ================= GITHUB LINK ================= */
+/* ================== ITEM ================== */
+.item {
+  margin-bottom: 30px;
+}
+
+.item h4 {
+  font-size: 1.3rem;
+  color: inherit; /* inherits parent color */
+  margin-bottom: 5px;
+}
+
+.item .meta {
+  font-size: 0.9rem;
+  color: #ccc; /* light on dark blue */
+  margin-bottom: 10px;
+}
+
+.item ul {
+  list-style: disc inside;
+  margin-left: 0;
+  color: inherit;
+}
+
+.item p.tech {
+  font-style: italic;
+  color: #ffd166; /* golden accent */
+}
+
+/* ================== GITHUB LINK ================== */
 .github-link {
   display: inline-block;
-  margin-top: 12px;
-  padding: 10px 16px;
-  border-radius: 8px;
-  border: 1px solid #1c1c1c;
-  background: #e8f0fc;
-  color: #1c1c1c;
+  padding: 10px 20px;
+  background: #0a2540;
+  color: #fff;
   text-decoration: none;
-  font-weight: 500;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
 .github-link:hover {
-  background: #d0e0f8;
+  background: #ffd166;
+  color: #0a2540;
 }
 
-/* ================= FOOTER ================= */
+/* ================== SKILLS ================== */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.skills li {
+  background: #0a2540;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin: 5px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.skills li:hover {
+  background: #ffd166;
+  color: #0a2540;
+}
+
+/* ================== FOOTER ================== */
 footer {
-  padding: 40px 0;
   text-align: center;
-  font-size: 14px;
-  color: #666;
-  border-top: 1px solid #ccc;
+  padding: 20px;
+  background: #0a2540;
+  color: #fff;
+  margin-top: 40px;
+}
+
+/* ================== PROJECTS ================== */
+.project {
+  background: #0a2540; /* dark blue card */
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+/* ================== IMAGE RESPONSIVE ================== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%; /* circular for profile/project images */
 }

@@ -221,3 +221,8 @@ img {
   padding-left: 32px !important;
   padding-right: 32px !important;
 }
+.section,
+.section * {
+  padding-left: 24px;
+  padding-right: 24px;
+}

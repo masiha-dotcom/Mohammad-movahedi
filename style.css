@@ -197,4 +197,19 @@ img {
   display: block;
   border-radius: 50%; /* circular for profile/project images */
 }
+/* Align all items properly */
+.section .container .item {
+    margin-left: 0;   /* Align all items with the container */
+    padding-left: 0;  /* Remove extra padding */
+}
 
+/* Standard spacing for lists */
+.section .container .item ul {
+    padding-left: 20px;
+    margin: 0;        /* Remove extra margin */
+}
+
+/* Remove extra margin for paragraphs */
+.section .container .item p {
+    margin: 0;
+}

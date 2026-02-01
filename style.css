@@ -217,3 +217,7 @@ img {
   padding-left: 32px;
   padding-right: 32px;
 }
+.container {
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+}

@@ -213,6 +213,7 @@ img {
 .section .container .item p {
     margin: 0;
 }
-.container {
-  outline: 3px solid red;
+.section {
+  padding-left: 32px;
+  padding-right: 32px;
 }

@@ -236,3 +236,10 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
+/* Center Main Content */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

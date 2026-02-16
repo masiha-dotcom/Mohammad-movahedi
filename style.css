@@ -217,24 +217,9 @@ img {
   padding-left: 32px;
   padding-right: 32px;
 }
-.container {
-  padding-left: 32px !important;
-  padding-right: 32px !important;
-}
-.section,
-.section * {
-  padding-left: 24px;
-  padding-right: 24px;
-}
 body {
   margin: 0;
   padding: 0;
-}
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
 }
 /* Center Main Content */
 .container {

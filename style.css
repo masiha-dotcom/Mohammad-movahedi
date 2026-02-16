@@ -18,7 +18,7 @@ body {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 20px 30px;
+  padding: 0 30px;
 }
 
 /* ================== HEADER ================== */
@@ -65,6 +65,8 @@ header nav a:hover {
   border-radius: 50%; /* circular image */
   border: 5px solid #0a2540; /* dark blue border */
   margin-bottom: 20px;
+  float: left;
+  margin-right: 20px;
 }
 
 .hero h2 {
@@ -76,11 +78,12 @@ header nav a:hover {
 .hero p {
   font-size: 1.2rem;
   color: #333;
+  padding-left: 10px; /* adds spacing from image */
 }
 
 /* ================== SECTIONS ================== */
 .section {
-  padding: 40px 0;
+  padding: 40px 32px;
 }
 
 .section.alt {
@@ -125,6 +128,11 @@ header nav a:hover {
 .item p.tech {
   font-style: italic;
   color: #ffd166; /* golden accent */
+}
+
+.section .container .item p {
+  margin: 0;
+  padding-left: 10px; /* spacing from left */
 }
 
 /* ================== GITHUB LINK ================== */
@@ -209,22 +217,3 @@ img {
     margin: 0;        /* Remove extra margin */
 }
 
-/* Remove extra margin for paragraphs */
-.section .container .item p {
-    margin: 0;
-}
-.section {
-  padding-left: 32px;
-  padding-right: 32px;
-}
-body {
-  margin: 0;
-  padding: 0;
-}
-/* Center Main Content */
-.container {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-}

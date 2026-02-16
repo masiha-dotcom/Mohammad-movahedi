@@ -8,7 +8,7 @@
 
 /* ================== BODY ================== */
 body {
-  background: #ffffff; /* white background */
+  background: #ffffff;
   color: #1a1a1a;
   line-height: 1.6;
 }
@@ -23,7 +23,7 @@ body {
 
 /* ================== HEADER ================== */
 header {
-  background: #0a2540; /* dark blue, official and formal */
+  background: #0a2540;
   color: #fff;
   padding: 20px 0;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -48,25 +48,29 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #ffd166; /* golden accent on hover */
+  color: #ffd166;
 }
 
 /* ================== HERO ================== */
 .hero {
-  background: #f5f7fa; /* very light formal background */
+  display: flex;
+  align-items: center;
+  gap: 20px; /* spacing between image and text */
+  background: #f5f7fa;
   padding: 60px 0;
-  text-align: center;
 }
 
 .hero .profile-img {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border-radius: 50%; /* circular image */
-  border: 5px solid #0a2540; /* dark blue border */
-  margin-bottom: 20px;
-  float: left;
-  margin-right: 20px;
+  border-radius: 50%;
+  border: 5px solid #0a2540;
+  margin: 0; /* removed float */
+}
+
+.hero .hero-text {
+  flex: 1; /* text takes remaining space */
 }
 
 .hero h2 {
@@ -78,7 +82,6 @@ header nav a:hover {
 .hero p {
   font-size: 1.2rem;
   color: #333;
-  padding-left: 10px; /* adds spacing from image */
 }
 
 /* ================== SECTIONS ================== */
@@ -87,7 +90,7 @@ header nav a:hover {
 }
 
 .section.alt {
-  background: #0a2540; /* dark blue official */
+  background: #0a2540;
   color: #fff;
   border-radius: 12px;
   margin: 20px 0;
@@ -97,7 +100,7 @@ header nav a:hover {
 .section h3 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  border-bottom: 2px solid #ffd166; /* golden underline for luxury */
+  border-bottom: 2px solid #ffd166;
   display: inline-block;
   padding-bottom: 5px;
 }
@@ -109,13 +112,13 @@ header nav a:hover {
 
 .item h4 {
   font-size: 1.3rem;
-  color: inherit; /* inherits parent color */
+  color: inherit;
   margin-bottom: 5px;
 }
 
 .item .meta {
   font-size: 0.9rem;
-  color: #ccc; /* light on dark blue */
+  color: #ccc;
   margin-bottom: 10px;
 }
 
@@ -127,12 +130,11 @@ header nav a:hover {
 
 .item p.tech {
   font-style: italic;
-  color: #ffd166; /* golden accent */
+  color: #ffd166;
 }
 
 .section .container .item p {
   margin: 0;
-  padding-left: 10px; /* spacing from left */
 }
 
 /* ================== GITHUB LINK ================== */
@@ -185,7 +187,7 @@ footer {
 
 /* ================== PROJECTS ================== */
 .project {
-  background: #0a2540; /* dark blue card */
+  background: #0a2540;
   color: #fff;
   padding: 20px;
   border-radius: 12px;
@@ -203,17 +205,17 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 50%; /* circular for profile/project images */
+  border-radius: 50%;
 }
-/* Align all items properly */
+
+/* Align items properly */
 .section .container .item {
-    margin-left: 0;   /* Align all items with the container */
-    padding-left: 0;  /* Remove extra padding */
+  margin-left: 0;
+  padding-left: 0;
 }
 
 /* Standard spacing for lists */
 .section .container .item ul {
-    padding-left: 20px;
-    margin: 0;        /* Remove extra margin */
+  padding-left: 20px;
+  margin: 0;
 }
-

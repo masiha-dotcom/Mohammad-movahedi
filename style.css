@@ -16,7 +16,7 @@ body {
 /* ================== CONTAINER ================== */
 .container {
   width: 100%;
-  max-width: 1350px;
+  max-width: 1350px;   /* Professional wide layout */
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -29,25 +29,18 @@ header {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 header h1 {
   font-size: 2rem;
 }
 
-/* Navigation بدون float */
 header nav {
-  display: flex;
-  gap: 20px;
+  float: right;
 }
 
 header nav a {
   color: #fff;
   text-decoration: none;
+  margin-left: 20px;
   font-weight: 500;
   transition: 0.3s;
 }
@@ -67,7 +60,6 @@ header nav a:hover {
   align-items: center;
   gap: 40px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .profile-img {
@@ -78,11 +70,9 @@ header nav a:hover {
   border: 5px solid #0a2540;
 }
 
-/* ================== TEXT ================== */
 .hero-text {
   flex: 1;
   min-width: 250px;
-  max-width: 800px;
 }
 
 .hero-text h2 {
@@ -99,19 +89,14 @@ header nav a:hover {
 /* ================== SECTIONS ================== */
 .section {
   padding: 60px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .section.alt {
   background: #0a2540;
   color: #fff;
   border-radius: 16px;
-  margin: 40px auto;
+  margin: 40px 0;
   padding: 60px 40px;
-  width: 90%;
-  max-width: 1200px;
 }
 
 .section h3 {
@@ -124,17 +109,7 @@ header nav a:hover {
 
 /* ================== ITEM ================== */
 .item {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto 40px auto;
-  text-align: left;
-}
-
-.section .item {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto 40px auto;
-  text-align: left;
+  margin-bottom: 40px;
 }
 
 .item h4 {
@@ -164,7 +139,6 @@ header nav a:hover {
   flex-wrap: wrap;
   list-style: none;
   margin-top: 20px;
-  justify-content: center;
 }
 
 .skills li {
@@ -190,8 +164,6 @@ header nav a:hover {
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   transition: 0.3s;
-  width: 100%;
-  max-width: 900px;
 }
 
 .project:hover {
@@ -213,4 +185,27 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+/* Center experience section items */
+.section .item {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+}
+
+/* Fix section spacing */
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Make lists aligned properly */
+.section ul {
+  padding-left: 20px;
+}
+.item {
+  width: 100%;
+  max-width: 900px;
 }

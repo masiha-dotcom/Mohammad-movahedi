@@ -15,10 +15,10 @@ body {
 
 /* ================== CONTAINER ================== */
 .container {
-  width: 90%;
-  max-width: 1100px;
+  width: 100%;
+  max-width: 1350px;   /* Professional wide layout */
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 40px;
 }
 
 /* ================== HEADER ================== */
@@ -31,12 +31,10 @@ header {
 
 header h1 {
   font-size: 2rem;
-  margin-left: 20px;
 }
 
 header nav {
   float: right;
-  margin-right: 20px;
 }
 
 header nav a {
@@ -54,19 +52,19 @@ header nav a:hover {
 /* ================== HERO ================== */
 .hero {
   background: #f5f7fa;
-  padding: 60px 0;
+  padding: 80px 0;
 }
 
 .hero-container {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
 .profile-img {
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid #0a2540;
@@ -78,7 +76,7 @@ header nav a:hover {
 }
 
 .hero-text h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #0a2540;
   margin-bottom: 10px;
 }
@@ -90,20 +88,20 @@ header nav a:hover {
 
 /* ================== SECTIONS ================== */
 .section {
-  padding: 40px 32px;
+  padding: 60px 0;
 }
 
 .section.alt {
   background: #0a2540;
   color: #fff;
-  border-radius: 12px;
-  margin: 20px 0;
-  padding: 40px;
+  border-radius: 16px;
+  margin: 40px 0;
+  padding: 60px 40px;
 }
 
 .section h3 {
   font-size: 1.8rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-bottom: 2px solid #ffd166;
   display: inline-block;
   padding-bottom: 5px;
@@ -111,30 +109,28 @@ header nav a:hover {
 
 /* ================== ITEM ================== */
 .item {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .item h4 {
   font-size: 1.3rem;
-  color: inherit;
   margin-bottom: 5px;
 }
 
 .item .meta {
   font-size: 0.9rem;
-  color: #ccc;
+  opacity: 0.8;
   margin-bottom: 10px;
 }
 
 .item ul {
   list-style: disc inside;
-  margin-left: 0;
-  color: inherit;
 }
 
 .item p.tech {
   font-style: italic;
   color: #ffd166;
+  margin-top: 10px;
 }
 
 /* ================== SKILLS ================== */
@@ -148,9 +144,9 @@ header nav a:hover {
 .skills li {
   background: #0a2540;
   color: #fff;
-  padding: 8px 15px;
+  padding: 8px 16px;
   border-radius: 20px;
-  margin: 5px;
+  margin: 6px;
   font-weight: 500;
   transition: 0.3s;
 }
@@ -164,24 +160,24 @@ header nav a:hover {
 .project {
   background: #0a2540;
   color: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   transition: 0.3s;
 }
 
 .project:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 
 /* ================== FOOTER ================== */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   background: #0a2540;
   color: #fff;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 /* ================== IMAGE RESPONSIVE ================== */
@@ -189,50 +185,4 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 50%;
-}
-/* ===== FIX LAYOUT WIDTH ISSUE ===== */
-
-html, body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-main,
-.container,
-.wrapper,
-.content {
-  width: 100%;
-  max-width: 1200px; /* You can increase to 1400px if you want it wider */
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
-}
-
-/* If your site is wrapped inside a root div */
-#root, #app {
-  width: 100%;
-}
-body > div {
-  width: 100% !important;
-  max-width: 100% !important;
-}
-/* ✨ FORCE FULL WIDTH LAYOUT — IMPORTANT */
-html, body {
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-*, *::before, *::after {
-  box-sizing: border-box !important;
-}
-
-body, html, #root, #app, .site, .container, .page, .content, .wrapper {
-  width: 100% !important;
-  max-width: none !important;
-  margin: 0 auto !important;
-  padding: 0 20px !important;
 }

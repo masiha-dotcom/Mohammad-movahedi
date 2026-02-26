@@ -219,3 +219,20 @@ body > div {
   width: 100% !important;
   max-width: 100% !important;
 }
+/* ✨ FORCE FULL WIDTH LAYOUT — IMPORTANT */
+html, body {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box !important;
+}
+
+body, html, #root, #app, .site, .container, .page, .content, .wrapper {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+}

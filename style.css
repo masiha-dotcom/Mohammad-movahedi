@@ -191,3 +191,27 @@ img {
   display: block;
   border-radius: 50%;
 }
+/* ===== FIX LAYOUT WIDTH ISSUE ===== */
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main,
+.container,
+.wrapper,
+.content {
+  width: 100%;
+  max-width: 1200px; /* You can increase to 1400px if you want it wider */
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+/* If your site is wrapped inside a root div */
+#root, #app {
+  width: 100%;
+}

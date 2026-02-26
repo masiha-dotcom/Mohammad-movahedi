@@ -215,3 +215,7 @@ main,
 #root, #app {
   width: 100%;
 }
+body > div {
+  width: 100% !important;
+  max-width: 100% !important;
+}

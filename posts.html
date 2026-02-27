@@ -6,50 +6,59 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+
 body{
-    font-family: Arial, sans-serif;
-    background:#f9f9f9;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background:#ffffff;
     margin:0;
-    padding:0;
 }
 
 header{
-    background:#111;
-    color:white;
-    padding:25px;
     text-align:center;
+    padding:60px 20px 40px;
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
 }
 
 .container{
-    width:90%;
-    max-width:900px;
+    max-width:800px;
     margin:auto;
-    padding:40px 0;
+    padding:20px;
 }
 
 .post-card{
-    background:white;
-    padding:25px;
-    margin-bottom:25px;
-    border-radius:12px;
-    box-shadow:0 3px 15px rgba(0,0,0,0.08);
-    transition:0.3s;
+    background:#fafafa;
+    border-radius:16px;
+    padding:30px;
+    margin-bottom:30px;
+    transition:0.35s ease;
+    border:1px solid #eee;
 }
 
 .post-card:hover{
-    transform:translateY(-5px);
+    transform:translateY(-6px);
 }
 
 .post-card h2{
     margin-top:0;
+    font-size:24px;
+}
+
+.post-card p{
+    line-height:1.7;
+    color:#333;
 }
 
 .post-card span{
     display:block;
-    margin-top:15px;
-    color:gray;
-    font-size:14px;
+    margin-top:18px;
+    font-size:13px;
+    color:#777;
 }
+
 </style>
 </head>
 
@@ -57,14 +66,15 @@ header{
 
 <header>
 <h1>Blog</h1>
-<p>Latest Telegram Posts</p>
+<p>Latest Posts</p>
 </header>
 
 <div class="container">
-<div id="posts">Loading posts...</div>
+<div id="posts">Loading...</div>
 </div>
 
 <script>
+
 const feedURL = "https://rsshub.app/telegram/channel/Mova97M";
 
 fetch(feedURL)
@@ -94,6 +104,7 @@ fetch(feedURL)
     document.getElementById("posts").innerHTML =
     "Unable to load posts.";
 });
+
 </script>
 
 </body>

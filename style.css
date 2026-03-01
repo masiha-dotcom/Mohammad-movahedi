@@ -16,7 +16,7 @@ body {
 /* ================== CONTAINER ================== */
 .container {
   width: 100%;
-  max-width: 1350px;   /* Professional wide layout */
+  max-width: 1350px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -78,17 +78,18 @@ header nav a:hover {
 .hero-text h2 {
   font-size: 2.2rem;
   color: #0a2540;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .hero-text p {
   font-size: 1.2rem;
   color: #333;
+  margin-bottom: 14px;
 }
 
 /* ================== SECTIONS ================== */
 .section {
-  padding: 60px 0;
+  padding: 80px 0;
 }
 
 .section.alt {
@@ -101,26 +102,36 @@ header nav a:hover {
 
 .section h3 {
   font-size: 1.8rem;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-bottom: 2px solid #ffd166;
   display: inline-block;
   padding-bottom: 5px;
 }
 
+/* Text spacing inside sections */
+.section p,
+.section li,
+.section h4 {
+  margin-bottom: 18px;
+  line-height: 1.8;
+}
+
 /* ================== ITEM ================== */
 .item {
-  margin-bottom: 40px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 50px auto;
 }
 
 .item h4 {
   font-size: 1.3rem;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .item .meta {
   font-size: 0.9rem;
   opacity: 0.8;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .item ul {
@@ -130,7 +141,7 @@ header nav a:hover {
 .item p.tech {
   font-style: italic;
   color: #ffd166;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 /* ================== SKILLS ================== */
@@ -138,7 +149,7 @@ header nav a:hover {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .skills li {
@@ -171,56 +182,12 @@ header nav a:hover {
   box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 
-/* ================== FOOTER ================== */
-footer {
-  text-align: center;
-  padding: 30px;
-  background: #0a2540;
-  color: #fff;
-  margin-top: 60px;
-}
-
-/* ================== IMAGE RESPONSIVE ================== */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-/* Center experience section items */
-.section .item {
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 900px;
-}
-
-/* Fix section spacing */
-.section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Make lists aligned properly */
-.section ul {
-  padding-left: 20px;
-}
-.item {
-  width: 100%;
-  max-width: 900px;
-}
-.item {
-  max-width: 900px;
-  width: 100%;
-  margin: 0 auto;
-}
 /* ================== TELEGRAM POSTS ================== */
-
 #telegram-posts {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-top: 30px;
+  gap: 25px;
+  margin-top: 40px;
 }
 
 #telegram-posts .project {
@@ -237,4 +204,16 @@ img {
 
 #telegram-posts a:hover {
   opacity: 0.8;
+}
+
+/* ================== IMAGE RESPONSIVE ================== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* List alignment */
+.section ul {
+  padding-left: 20px;
 }
